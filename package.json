@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "training app from udemy course react for the rest of us",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve --open"
   },
   "dependencies": {
     "@babel/core": "^7.20.12",

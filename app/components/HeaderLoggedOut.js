@@ -20,7 +20,7 @@ function HeaderLoggedOut(props) {
       }
 
     } catch (e) {
-      console.log("Oops!  There was a problem.")
+      console.log(e.response.data)
     }
   }
   return (

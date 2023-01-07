@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Terms from "./components/Terms";
 import Home from "./components/Home";
+import CreatePost from "./components/CreatePost";
+import Axios from "axios";
+Axios.defaults.baseURL="http://localhost:8080";
 
 
 function Main() {
@@ -20,6 +23,7 @@ function Main() {
      <Routes>
       
       <Route path="/" element={loggedIn ? <Home /> : <HomeGuest />}/>
+      <Route path="/create-post" element={<CreatePost />}/>
       <Route path="/about-us" element={<About />}/>
       <Route path="/terms" element={<Terms />}/>
      </Routes>

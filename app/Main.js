@@ -9,6 +9,7 @@ import HomeGuest from "./components/HomeGuest";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Terms from "./components/Terms";
+import Home from "./components/Home";
 
 
 function Main() {
@@ -17,7 +18,7 @@ function Main() {
     <Header />
      <Routes>
       
-      <Route path="/" element={<HomeGuest />}/>
+      <Route path="/" element={<Home />}/>
       <Route path="/about-us" element={<About />}/>
       <Route path="/terms" element={<Terms />}/>
      </Routes>

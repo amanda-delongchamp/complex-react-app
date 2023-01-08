@@ -25,6 +25,7 @@ function Main() {
   function addFlashMessage(msg) {
     setFlashMessages(prev => prev.concat(msg));
   }
+  
   return (
     <BrowserRouter>
     <FlashMessages messages={flashMessages}/>
